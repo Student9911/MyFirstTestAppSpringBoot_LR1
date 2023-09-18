@@ -5,7 +5,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 @RestController
 public class HelloController {
@@ -28,7 +32,7 @@ public class HelloController {
         String outMessage;
         if (anyWeb.isEmpty()) {
             anyWeb.add(value);
-            outMessage ="пустой Array List создан и ваши данные записаны";
+            outMessage = "пустой Array List создан и ваши данные записаны";
         } else {
             anyWeb.add(value);
             outMessage = value + ": добавлен в Array List";
